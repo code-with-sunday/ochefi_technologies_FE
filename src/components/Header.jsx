@@ -233,16 +233,8 @@ export const Header = () => {
                                         <i className="bx bx-caret-down" />
                                     </Link>
                                     <ul className="dropdown-menu">
-                                        <li className="nav-item">
-                                            <Link to={`/team`} className="nav-link">
-                                                Team
-                                            </Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link to={`/testimonial`} className="nav-link">
-                                                Testimonials
-                                            </Link>
-                                        </li>
+                                        
+                                       
                                         <li className="nav-item">
                                             <Link to={`/faq`} className="nav-link">
                                                 FAQ

@@ -23,8 +23,8 @@ function App() {
       <Route path="/service" element={<Service />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/team" element={<Team />} />
-      <Route path="/testimonial" element={<Testimonials />} />
+      {/* <Route path="/team" element={<Team />} /> */}
+      {/* <Route path="/testimonial" element={<Testimonials />} /> */}
       <Route path="/faq" element={<Faq />} />
       <Route path="/terms&condition" element={<TermsCondition/>} />
       <Route path="/privacy&policy" element={<PrivacyPolicy/>} />
