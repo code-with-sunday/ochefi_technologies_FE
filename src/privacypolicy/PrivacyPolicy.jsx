@@ -10,7 +10,7 @@ export const PrivacyPolicy = () => {
             <div className="privacy-policy-area pt-100 pb-70">
                 <div className="container">
                     <div className="section-title text-center">
-                        <span className="sp-color2">Privacy Policy</span>
+                        {/* <span className="sp-color2">Privacy Policy</span> */}
                         <h2>Ochefi-Technologies Privacy Policy</h2>
                     </div>
                     <div className="row pt-45">
