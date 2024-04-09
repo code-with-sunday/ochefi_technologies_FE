@@ -38,8 +38,8 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-
-$EmailTo = "info@ochefitechnologies.site";
+$EmailTo = "sundaypetersp12@gmail.com";
+// $EmailTo = "info@ochefitechnologies.site";
 
 $Subject = "New Message Received";
 

@@ -1,94 +1,99 @@
 import { Link } from "react-router-dom";
-
-// import React from "react";
-import React, { useEffect, useState } from 'react';
+import $ from 'jquery';
+import React from "react";
+// import React, { useEffect, useState } from 'react';
 
 export const Header = () => {
 
-    useEffect(() => {
-        if (typeof window !== 'undefined' && typeof window.$ === 'undefined') {
-            // jQuery is not available, load it dynamically
-            const script = document.createElement('script');
-            script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
-            script.async = true;
-            script.onload = () => {
-                // Now that jQuery is loaded, you can use it
-                initScripts();
-            };
-            document.body.appendChild(script);
-        } else {
-            // jQuery is already available
-            initScripts();
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (typeof window !== 'undefined' && typeof window.$ === 'undefined') {
+    //         // jQuery is not available, load it dynamically
+    //         const script = document.createElement('script');
+    //         script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+    //         script.async = true;
+    //         script.onload = () => {
+    //             // Now that jQuery is loaded, you can use it
+    //             initScripts();
+    //         };
+    //         document.body.appendChild(script);
+    //     } else {
+    //         // jQuery is already available
+    //         initScripts();
+    //     }
+    // }, []);
 
-    const initScripts = () => {
-        // Your jQuery code here
-        $('.mean-menu').meanmenu({
-            meanScreenWidth: '991'
-        });
-        // Other jQuery code...
+    // const initScripts = () => {
+    //     // Your jQuery code here
+    //     $('.mean-menu').meanmenu({
+    //         meanScreenWidth: '991'
+    //     });
+    //     // Other jQuery code...
 
-        // Navbar Area
-        $(window).on('scroll', function () {
-            if ($(this).scrollTop() > 150) {
-                $('.navbar-area').addClass("sticky-nav");
-            } else {
-                $('.navbar-area').removeClass("sticky-nav");
-            }
-        });
+    //     // Navbar Area
+    //     $(window).on('scroll', function () {
+    //         if ($(this).scrollTop() > 150) {
+    //             $('.navbar-area').addClass("sticky-nav");
+    //         } else {
+    //             $('.navbar-area').removeClass("sticky-nav");
+    //         }
+    //     });
 
-        // Search Overlay JS
-        $(".nav-side .search-box i").on("click", function () {
-            $(".search-overlay").toggleClass("search-overlay-active");
-        });
-        $(".search-close").on("click", function () {
-            $(".search-overlay").removeClass("search-overlay-active");
-        });
+    //     // Search Overlay JS
+    //     $(".nav-side .search-box i").on("click", function () {
+    //         $(".search-overlay").toggleClass("search-overlay-active");
+    //     });
+    //     $(".search-close").on("click", function () {
+    //         $(".search-overlay").removeClass("search-overlay-active");
+    //     });
 
-        // Others Option For Responsive JS
-        $(".side-nav-responsive .dot-menu").on("click", function () {
-            $(".side-nav-responsive .container-max .container").toggleClass("active");
-        });
+    //     // Others Option For Responsive JS
+    //     $(".side-nav-responsive .dot-menu").on("click", function () {
+    //         $(".side-nav-responsive .container-max .container").toggleClass("active");
+    //     });
 
-        // Banner Slider and other Owl Carousel configurations...
+    //     // Nice Select JS
+    //     $('select').niceSelect();
 
-        // Nice Select JS
-        $('select').niceSelect();
+    //     // FAQ Accordion JS
+    //     $('.accordion').find('.accordion-title').on('click', function () {
+    //         $(this).toggleClass('active');
+    //         $(this).next().slideToggle('fast');
+    //         $('.accordion-content').not($(this).next()).slideUp('fast');
+    //         $('.accordion-title').not($(this)).removeClass('active');
+    //     });
 
-        // FAQ Accordion JS
-        $('.accordion').find('.accordion-title').on('click', function () {
-            $(this).toggleClass('active');
-            $(this).next().slideToggle('fast');
-            $('.accordion-content').not($(this).next()).slideUp('fast');
-            $('.accordion-title').not($(this)).removeClass('active');
-        });
+    //     // Skill-bar JS and other functionalities...
 
-        // Skill-bar JS and other functionalities...
+    //     // WOW JS initialization
+    //     new WOW().init();
 
-        // WOW JS initialization
-        new WOW().init();
+    //     // Back To Top functionality...
 
-        // Back To Top functionality...
+    //     // Count Time JS and other functionalities...
 
-        // Count Time JS and other functionalities...
-
-        // AJAX MailChimp and other form functionalities...
-        const slider = document.getElementById('slider');
-        if (slider) {
-            if (localStorage.getItem('theme') === 'theme-dark') {
-                setTheme('theme-dark');
-                slider.checked = false;
-            } else {
-                setTheme('theme-light');
-                slider.checked = true;
-            }
-        }
-    };// Empty dependency array to mimic componentDidMount behavior
+    //     // AJAX MailChimp and other form functionalities...
+    //     const slider = document.getElementById('theme');
+    //     if (slider) {
+    //         if (localStorage.getItem('theme') === 'theme-dark') {
+    //             setTheme('theme-dark');
+    //             slider.checked = false;
+    //         } else {
+    //             setTheme('theme-light');
+    //             slider.checked = true;
+    //         }
+    //     }
+    // };
 
 
     return <>
         <div>
+            {/* Your script tags */}
+            
+
+            
+
+
+            {/* Your HTML code */}
             {/* Required Meta Tags */}
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
